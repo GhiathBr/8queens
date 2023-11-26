@@ -24,14 +24,14 @@ int trys=0;
             printf("invalide\n");
             break;
         }
-        else {
+        
+        matrix[ligne][colone]=1;
+        if(matrix[ligne][i]!=1 &&    matrix[i][colone]!=1) {
           
         matrix[ligne][i]=8;
         matrix[i][colone]=8;
         }
-         if (i==colone ){
-            matrix[ligne][colone]=1;
-        }
+        
             int i=ligne;
     int j=colone;
     while(i>=0 && j<8){
@@ -70,7 +70,7 @@ int trys=0;
     }
 
     }
-    
+   trys++; 
 
 
 
